@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="5" parallel="methods">
+
+	<parameter name="url" value="https://login.yahoo.com/" />
+	<parameter name="UserID" value="test1234@yahoo.com" />
+
+	<listeners>
+		<listener class-name="step.com.testNG.TestNGListeners"></listener>
+
+	</listeners>
+
+	<test name="testGuru999SIkhie che">
+		<classes>
+			<class name="step.com.testNG.YahooLoginParameters_XMLFile" />
+			<class name="step.com.testNG.TestNGListenerDemo" />
+			<class name="step.com.testNG.TestNgInstallationCheck" />
+			<class name="step.com.testNG.MultipleSessionHandling">
+					</class>
+				</classes>
+			</test>
+</suite>

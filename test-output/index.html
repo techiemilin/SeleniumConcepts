@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestNGSuiteParellenRunning">
+              <span class="suite-name border-failed">TestNGSuiteParellenRunning</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestNGSuiteParellenRunning">
+                    <span>testng.XML</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestNGSuiteParellenRunning">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestNGSuiteParellenRunning">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestNGSuiteParellenRunning">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestNGSuiteParellenRunning">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNGSuiteParellenRunning">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestNGSuiteParellenRunning">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNGSuiteParellenRunning" class="hide-methods failed suite-TestNGSuiteParellenRunning"> (hide)</a> <!-- hide-methods failed suite-TestNGSuiteParellenRunning -->
+                      <a href="#" panel-name="suite-TestNGSuiteParellenRunning" class="show-methods failed suite-TestNGSuiteParellenRunning"> (show)</a> <!-- show-methods failed suite-TestNGSuiteParellenRunning -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNGSuiteParellenRunning">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGSuiteParellenRunning" title="step.com.testNG.TestNGListenerDemo" hash-for-method="getTitleOfLoginPage">getTitleOfLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNGSuiteParellenRunning -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNGSuiteParellenRunning" class="hide-methods passed suite-TestNGSuiteParellenRunning"> (hide)</a> <!-- hide-methods passed suite-TestNGSuiteParellenRunning -->
+                      <a href="#" panel-name="suite-TestNGSuiteParellenRunning" class="show-methods passed suite-TestNGSuiteParellenRunning"> (show)</a> <!-- show-methods passed suite-TestNGSuiteParellenRunning -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNGSuiteParellenRunning">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGSuiteParellenRunning" title="step.com.testNG.TestNGListenerDemo" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGSuiteParellenRunning" title="step.com.testNG.TestNgInstallationCheck" hash-for-method="verifyHomepage">verifyHomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGSuiteParellenRunning" title="step.com.testNG.YahooLoginParameters_XMLFile" hash-for-method="yahooLoginDetails(https://login.yahoo.com/, test1234@yahoo.com)">yahooLoginDetails(https://login.yahoo.com/, test1234@yahoo.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNGSuiteParellenRunning -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNGSuiteParellenRunning" class="panel TestNGSuiteParellenRunning">
+          <div class="suite-TestNGSuiteParellenRunning-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">step.com.testNG.TestNGListenerDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTitleOfLoginPage">
+                  </a> <!-- getTitleOfLoginPage -->
+                  <span class="method-name">getTitleOfLoginPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Guru99 Bank Home Page] but found [Guru99 Bank Manager HomePage]
+	at step.com.testNG.TestNGListenerDemo.getTitleOfLoginPage(TestNGListenerDemo.java:43)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuiteParellenRunning-class-failed -->
+          <div class="suite-TestNGSuiteParellenRunning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">step.com.testNG.TestNgInstallationCheck</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomepage">
+                  </a> <!-- verifyHomepage -->
+                  <span class="method-name">verifyHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuiteParellenRunning-class-passed -->
+          <div class="suite-TestNGSuiteParellenRunning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">step.com.testNG.TestNGListenerDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuiteParellenRunning-class-passed -->
+          <div class="suite-TestNGSuiteParellenRunning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">step.com.testNG.YahooLoginParameters_XMLFile</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="yahooLoginDetails(https://login.yahoo.com/, test1234@yahoo.com)">
+                  </a> <!-- yahooLoginDetails(https://login.yahoo.com/, test1234@yahoo.com) -->
+                  <span class="method-name">yahooLoginDetails</span>
+                  <span class="parameters">(https://login.yahoo.com/, test1234@yahoo.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuiteParellenRunning-class-passed -->
+        </div> <!-- panel TestNGSuiteParellenRunning -->
+        <div panel-name="test-xml-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/milinpatel/Documents/workspace/SeleniumWebDriver/src/step/com/testNG/testng.XML</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestNGSuiteParellenRunning&quot;&gt;
+  &lt;parameter name=&quot;UserID&quot; value=&quot;test1234@yahoo.com&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://login.yahoo.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;step.com.testNG.TestNGListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;testGuru999SIkhie che&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;step.com.testNG.YahooLoginParameters_XMLFile&quot;/&gt;
+      &lt;class name=&quot;step.com.testNG.TestNGListenerDemo&quot;/&gt;
+      &lt;class name=&quot;step.com.testNG.TestNgInstallationCheck&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- testGuru999SIkhie che --&gt;
+&lt;/suite&gt; &lt;!-- TestNGSuiteParellenRunning --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNGSuiteParellenRunning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">testGuru999SIkhie che (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNGSuiteParellenRunning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNGSuiteParellenRunning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNGSuiteParellenRunning');
+function tableData_TestNGSuiteParellenRunning() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'yahooLoginDetails')
+data.setCell(0, 2, 'step.com.testNG.YahooLoginParameters_XMLFile')
+data.setCell(0, 3, 5608);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'step.com.testNG.TestNGListenerDemo')
+data.setCell(1, 3, 1706);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getTitleOfLoginPage')
+data.setCell(2, 2, 'step.com.testNG.TestNGListenerDemo')
+data.setCell(2, 3, 20);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyHomepage')
+data.setCell(3, 2, 'step.com.testNG.TestNgInstallationCheck')
+data.setCell(3, 3, 6);
+window.suiteTableData['TestNGSuiteParellenRunning']= { tableData: data, tableDiv: 'times-div-TestNGSuiteParellenRunning'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-TestNGSuiteParellenRunning">
+              </div> <!-- times-div-TestNGSuiteParellenRunning -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNGSuiteParellenRunning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNGSuiteParellenRunning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">step.com.testNG.TestNGListenerDemo</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">step.com.testNG.TestNgInstallationCheck</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">4709 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">step.com.testNG.YahooLoginParameters_XMLFile</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">yahooLoginDetails(https://login.yahoo.com/, test1234@yahoo.com)</span>
+                <span class="method-start">7128 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">step.com.testNG.TestNGListenerDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Login</span>
+                <span class="method-start">12739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTitleOfLoginPage</span>
+                <span class="method-start">14447 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">step.com.testNG.TestNgInstallationCheck</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyHomepage</span>
+                <span class="method-start">14470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">14477 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

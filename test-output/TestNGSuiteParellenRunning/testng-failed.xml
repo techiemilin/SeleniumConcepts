@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestNGSuiteParellenRunning]">
+  <parameter name="UserID" value="test1234@yahoo.com"/>
+  <parameter name="url" value="https://login.yahoo.com/"/>
+  <listeners>
+    <listener class-name="step.com.testNG.TestNGListeners"/>
+  </listeners>
+  <test thread-count="4" name="testGuru999SIkhie che(failed)">
+    <classes>
+      <class name="step.com.testNG.TestNGListenerDemo">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="getTitleOfLoginPage"/>
+        </methods>
+      </class> <!-- step.com.testNG.TestNGListenerDemo -->
+    </classes>
+  </test> <!-- testGuru999SIkhie che(failed) -->
+</suite> <!-- Failed suite [TestNGSuiteParellenRunning] -->
